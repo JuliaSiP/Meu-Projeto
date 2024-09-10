@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: dotted;
+    color: #efe1de;
+    font-weight: 900;
+}
+
+a:hover {
+    color: crimson;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 10rem;
+    background-color: #E6AA8E;
+    color: #fff;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header ul {
+    display: flex;
+    gap: 2rem;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+   background-color: #efe1de;
+}
+
+.article {
+    min-height: 70vh;
+    width: 100%;
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.article h1 {
+    font-size: 5vmin;
+    margin: 2rem 0;
+}
+
+.article p{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    background-color: #E6AA8E;
+}
+
+h2 {
+    margin: 2rem;
+
+}
+
+.section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    grid-template-areas: "card1 card2 card3";
+    margin: 5rem 0;
+    padding: 0 2rem;
+}
+
+.card {
+    border-radius: 5px;
+    background-color: #E6AA8E;
+    padding: 1rem;
+    text-align: center;
+}
+
+.card h3{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.card p {
+    margin: 1rem;
+    font-size: 1.8rem;
+    color: #151414;
+}
+
+.card img {
+    width: 80%;
+    height: 30vmax;
+    border-radius: 5px;
+}
+
+.card1 {
+    grid-area: card1;
+}
+
+.card2 {
+    grid-area: card2;
+}
+
+.card3 {
+    grid-area: card3;
+}
+
+.footer {
+    background-color: #E6AA8E;
+    color: #efe1de;
+    text-align: center;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "copyright";
+}
+
+.footer-content {
+    grid-area: copyright;
+}
